@@ -1,0 +1,374 @@
+$primary: #1c7cab;
+
+button, input, select {
+  box-shadow: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+* {
+  font-family: 'Palanquin', sans-serif;
+}
+
+nav.navbar.fixed {
+  position: fixed;
+  top: 0;
+}
+
+nav.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  .navbar-brand {
+    padding: 0;
+  }
+  .navbar-toggler {
+    margin-right: 16px;
+    background-color: white;
+    font-size: 22px;
+  }
+  .navbar-collapse {
+    justify-content: flex-end;
+    padding: 16px;
+    .navbar-nav {
+      a {
+        color: #ffffff;
+        opacity: 0.8;
+        &:hover, &:active, &:focus {
+          opacity: 1;
+          color: #ffffff;
+        }
+      }
+      .active {
+        a {
+          color: #ffffff;
+          opacity: 1;
+        }
+      }
+      .nav-item {
+        a {
+          padding: 8px;
+        }
+      }
+      .highlight {
+        background-color: #56aeda;
+        border-radius: 4px;
+      }
+    }
+  }
+
+}
+
+#slider {
+  position: relative;
+  .slider_img_wrapper {
+    width: 100%;
+    min-height: 450px;
+    img {
+      position: absolute;
+      height: 100%;
+      width: auto;
+    }
+  }
+  a {
+    i {
+      font-size: 46px;
+    }
+  }
+  .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    .text {
+      color: white;
+      text-align: center;
+      padding: 16px 32px;
+      margin: 142px auto 0;
+      h3 {
+        font-size: 55px;
+        text-transform: uppercase;
+      }
+      p {
+        font-size: 18px;
+        text-transform: uppercase;
+        opacity: 0.8;
+        span {
+          font-size: 30px;
+          color: #e8ff2b;
+        }
+      }
+      button {
+        border: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        margin-top: 8px;
+        animation: bounce 1s ease infinite;
+        cursor: pointer;
+      }
+      @keyframes bounce {
+        50% {
+          transform: translateY(-20%);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+
+  .car_img {
+    width: 100%;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    transition: all linear 0.3s;
+  }
+  .car_img_base {
+    width: 100%;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+  }
+}
+
+.affiliate_slider {
+  .text {
+    color: white;
+    text-align: center;
+    margin: 142px auto 0;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(70, 70, 70, 0.5);
+    width: 100%;
+  }
+}
+
+.ride_form {
+  img {
+    width: 100%;
+  }
+}
+
+.footer_img {
+  width: 100%;
+  display: flex;
+}
+
+#footer {
+  background-color: black;
+  width: 100%;
+  float: left;
+  h5 {
+    color: #fff;
+    text-transform: uppercase;
+  }
+  h6 {
+    text-align: center;
+    color: #fff;
+    margin: 16px 0 32px 0;
+  }
+  li {
+    color: #a0a0a0;
+    line-height: 30px;
+    a {
+      color: #a0a0a0;
+      text-decoration: none;
+    }
+  }
+  .register {
+    float: left;
+    width: 100%;
+    ul {
+      margin-bottom: 0;
+    }
+    .signup {
+      background-color: $primary;
+      border: 0;
+      padding: 8px 16px;
+      border-radius: 56px;
+      color: #fff;
+      margin-left: 16px;
+    }
+  }
+  hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.11);
+    float: left;
+    width: 100%;
+  }
+  .social_icon {
+    float: left;
+    width: 100%;
+    ul {
+      margin-bottom: 0;
+      li {
+        height: 45px;
+        width: 45px;
+        border-radius: 100%;
+        a {
+          display: flex;
+          height: 100%;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          color: #ffffff;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .copyright {
+    text-align: center;
+    color: #a0a0a0;
+    a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
+}
+
+.affiliate {
+  float: left;
+  width: 100%;
+  padding: 120px 0;
+  background-color: #f7f7f7;
+  button {
+    background-color: $primary;
+    color: white;
+    border: 0;
+    padding: 12px 52px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    margin-top: 32px;
+  }
+
+  .item {
+    border-bottom: 1px solid #dfe1e3;
+    margin:16px 0;
+    &:last-child{
+      margin-bottom: 0;
+      border-bottom: 0;
+    }
+    &:hover{
+      .image_wrapper {
+        box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+        img{
+          transform: scale(1.1);
+        }
+      }
+    }
+    .image_wrapper {
+      float: left;
+      width: 220px;
+      height: 220px;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-right: 16px;
+      margin-bottom: 16px;
+      transition:all .4s ease-in-out;
+      img{
+        width: 100%;
+        transition:all .4s ease-in-out;
+      }
+    }
+    .text{
+      h3 {
+        color: #56aeda;
+      }
+      p {
+        color: #616c77;
+      }
+      ul {
+        padding-left: 20px;
+        list-style-type: circle;
+        line-height: 35px;
+        color: #616c77;
+        list-style-position: inside;
+        li {
+          padding-left: 8px;
+        }
+      }
+
+    }
+  }
+}
+
+.form_body {
+  background-color: white;
+  padding: 16px;
+  float: left;
+  width: 100%;
+  h4{
+    margin: 0 0 32px 0;
+    font-size: 22px;
+  }
+  input, select {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid #eceff8;
+    font-size: 14px;
+    margin-bottom: 16px;
+    padding: 12px 10px;
+    width: 100%;
+    color: #333333;
+    float: left;
+    height: 47px;
+    border-radius: 0;
+  }
+  label {
+    float: left;
+    width: 100%;
+    color: #777777;
+    font-size: 14px;
+  }
+}
+
+.login_form {
+  img {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #slider .slider_img_wrapper img {
+    position: relative;
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  #slider .content .text button {
+    display: none;
+  }
+  #slider .content .text h3 {
+    font-size: 40px;
+  }
+  #slider .content .text p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    background-color: black;
+  }
+}
+@media (max-width: 768px) {
+  .affiliate .item .image_wrapper{
+    width: 100%;
+  }
+}
